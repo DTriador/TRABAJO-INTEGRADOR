@@ -32,6 +32,9 @@ public class GestorPaciente {
 					return true;
 		return false;
 	}
+	public boolean removeZapatos(Paciente p) {
+		return misPacientes.remove(p);
+	}
 	
 	public ArrayList<Paciente> getPaciente(Predicate<Paciente> p, Comparator<Paciente> c){
 		return misPacientes
